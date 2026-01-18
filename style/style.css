@@ -22,6 +22,10 @@ section {
     margin: 0 auto;
 }
 
+main>section{
+    margin-top: 100px;
+}
+
 .text {
     font-size: 16px;
     font-weight: 400;
@@ -30,6 +34,7 @@ section {
 }
 
 .btn {
+    font-size: 18px;
     padding: 16px 40px;
     border-radius: 42px;
     background-color: rgba(230, 83, 60, 1);
@@ -178,11 +183,41 @@ nav h2 {
 }
 
 
+/* run section  */
+.run-container{
+    background-color: rgba(255, 255, 255, 0.048);
+    border-radius: 18px;
+    align-items: center;
+    gap: 160px;
+}
+
+
+#run .content{
+    margin-left: 50px;
+}
+
+#run h1{
+    max-width: 440px;
+    text-align: start;
+}
+
+#run .text{
+    width: 440px;
+    text-align: start;
+}
+
+.run-img{
+    margin: 30px 0;
+}
+
 /* mobile screen  */
 @media screen and (max-width: 576px) {
 
+    main>section{
+        margin-top: 50px;
+    }
     
-    .banner-container, .habits-img {
+    .banner-container, .habits-img, .run-container {
         flex-direction: column;
     }
     
@@ -192,6 +227,10 @@ nav h2 {
 
     .content p {
     width: 100%;
+    }
+
+    .content h1 {
+        font-size: 32px;
     }
 
     .manu {
@@ -229,12 +268,36 @@ nav h2 {
 
     }
 
-    .content h1 {
-        font-size: 32px;
+    
+
+    #run .text{
+    width: 100%;
     }
+    
+    .run-img img{
+        width: 100%;
+    }
+
+    #run .content{
+    margin: 20px;
+    }
+
+    .run-container{
+    gap: 30px;
+    }
+    
+    #run .btn {
+    padding: 16px 40px;
+    }
+
 
     
 }
+
+
+
+
+
 
 
 /* tablet-section */
@@ -292,5 +355,34 @@ nav h2 {
         max-width: 230px;
     }
     
+
+    #run h1{
+        font-size: 36px;
+    }
+    #run .text{ 
+    width: 65%;
+    text-align: start;
+    margin: 10px 0;
+    }
+    
+    .run-img img{
+        width: 100%;
+        padding-right: 20px;
+    }
+
+    #run .content{
+    margin: 40px;
+    width: 50%;
+    }
+
+    .run-container{
+    gap: 10px;
+    }
+    
+    #run .btn {
+    padding: 16px 40px;
+    }
+
+
 
 }
