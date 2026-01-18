@@ -1,0 +1,296 @@
+/* font  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+
+
+/* shared styles */
+.flex {
+    display: flex;
+}
+
+nav,
+section {
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.507);
+}
+
+.btn {
+    padding: 16px 40px;
+    border-radius: 42px;
+    background-color: rgba(230, 83, 60, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.content h1 {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.content p {
+    width: 670px;
+    margin: 14px auto;
+    text-align: center;
+}
+
+/* main styles */
+
+body {
+    background-color: #1f1d1dde;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+/* nav section  */
+nav {
+
+    padding: 30px 0;
+    justify-content: space-between;
+}
+
+nav h2 {
+    font-size: 36px;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(230, 83, 60, 1);
+}
+
+.manu {
+    gap: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    align-items: center;
+    border-radius: 39px;
+}
+
+.manu p {
+    padding: 8px 20px;
+}
+
+.home {
+    background-color: rgba(230, 83, 60, 1);
+    padding: 8px 20px;
+    border-radius: 46px;
+}
+
+.nav-icon {
+    display: none;
+}
+
+/* banner section  */
+#banner {
+    margin-top: 96px;
+}
+
+.banner-container {
+    gap: 167px;
+}
+
+.banner-content {
+    max-width: 520px;
+}
+
+.banner-heading {
+    font-size: 78px;
+    font-weight: 900;
+}
+
+.banner-content .text {
+    margin: 28px 0;
+}
+
+.btn2 {
+    margin-left: 14px;
+    background: transparent;
+    border: 1px solid white;
+}
+
+.banner-img {
+    position: relative;
+    display: flex;
+}
+
+.banner-img img {
+    width: 349px;
+    height: 580px;
+    position: relative;
+}
+
+.img-content {
+    position: absolute;
+    top: 20%;
+    right: -8%;
+    background-color: #cec4c434;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.img-content2 {
+    position: absolute;
+    background-color: #cec4c434;
+    border-radius: 12px;
+    padding: 15px;
+    left: -30%;
+    top: 65%;
+    display: flex;
+    gap: 10px;
+}
+
+.ball {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: red;
+    margin-top: 10px;
+}
+
+/* habits section */
+
+.habits-img {
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+
+}
+
+.habits-img .rules {
+    text-align: center;
+
+}
+
+.rules img {
+    border-radius: 50%;
+}
+
+
+/* mobile screen  */
+@media screen and (max-width: 576px) {
+
+    
+    .banner-container, .habits-img {
+        flex-direction: column;
+    }
+    
+    .text {
+        font-size: 14px;
+    }
+
+    .content p {
+    width: 100%;
+    }
+
+    .manu {
+        display: none;
+    }
+
+    .nav-icon {
+        display: block;
+        padding: 20px 40px;
+    }
+
+    .banner-container {
+        gap: 50px;
+    }
+
+    .banner-heading {
+        max-width: 285px;
+        font-size: 36px;
+    }
+
+    .banner-container P {
+        max-width: 274px;
+    }
+
+    .btn2 {
+        margin-left: 0px;
+    }
+
+    .img-content {
+        right: 0%;
+    }
+
+    .img-content2 {
+        left: 0%;
+
+    }
+
+    .content h1 {
+        font-size: 32px;
+    }
+
+    
+}
+
+
+/* tablet-section */
+@media screen and (min-width:576px) and (max-width: 992px) {
+
+    .banner-container {
+        flex-direction: column;
+    }
+
+    .content p {
+    width: 100%;
+    }
+
+    .banner-container {
+        gap: 50px;
+    }
+
+    .btn2 {
+        margin-left: 0px;
+    }
+
+    .btn2 {
+        margin-left: 0px;
+    }
+
+    .img-content {
+        right: 0%;
+    }
+
+    .img-content2 {
+        left: 0%;
+
+    }
+
+    .banner-img {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-content {
+        right: 10%;
+    }
+
+    .img-content2 {
+        left: 5%;
+
+    }
+    
+    .habits-img{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .rules p{
+        max-width: 230px;
+    }
+    
+
+}
