@@ -64,12 +64,11 @@ body {
 
 /* nav section  */
 nav {
-
     padding: 30px 0;
     justify-content: space-between;
 }
 
-nav h2 {
+.heading {
     font-size: 36px;
     font-weight: 800;
     font-style: italic;
@@ -325,6 +324,7 @@ nav h2 {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     gap: 20px;
+    margin-bottom: 88px;
 }
 .team-img .box img{
     width: 320px;
@@ -350,6 +350,47 @@ nav h2 {
 }
 
 
+/* footer section  */
+footer{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 66px 0 35px;
+}
+
+footer .content p{
+    text-align: start;
+    max-width: 440px;
+}
+
+.footer-container{
+    justify-content: space-between;
+}
+
+footer .heading{
+    margin-bottom: 40px;
+}
+
+.footer-box{
+    gap: 130px;
+}
+
+footer .contact-heading{
+    margin-bottom: 40px;
+}
+
+.underline{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    margin-top: 78px;
+    margin-bottom: 36px;
+}
+.copyright{
+    text-align: center;
+    color: rgb(202, 202, 202);
+}
+
+
+
+
+
 /* mobile screen  */
 @media screen and (max-width: 576px) {
 
@@ -357,7 +398,11 @@ nav h2 {
         margin-top: 50px;
     }
     
-    .banner-container, .habits-img, .run-container {
+    .banner-container,
+    .habits-img,
+    .run-container,
+    .footer-container,
+    .footer-box {
         flex-direction: column;
     }
     
@@ -408,8 +453,6 @@ nav h2 {
 
     }
 
-    
-
     #run .text{
     width: 100%;
     }
@@ -434,7 +477,21 @@ nav h2 {
     grid-template-columns: repeat(1, 1fr);
     }
 
+    .footer-container{
+        padding-left: 20px;
+    }
+    footer .contact-heading{
+    margin-bottom: 10px;
+    }
+    
+    .footer-box{
+    gap: 20px;
+    }
 
+    .underline{
+    margin-top: 40px;
+    margin-bottom: 36px;
+    }
     
 }
 
@@ -447,7 +504,7 @@ nav h2 {
 /* tablet-section */
 @media screen and (min-width:576px) and (max-width: 992px) {
 
-    .banner-container {
+    .banner-container, .footer-container {
         flex-direction: column;
     }
 
@@ -526,11 +583,22 @@ nav h2 {
     #run .btn {
     padding: 16px 40px;
     }
-
+    
     .team-img .box img{
     max-width: 200px;
     }
 
+    .footer-container{
+        padding-left: 20px;
+    }
+
+    .contact-heading{
+        margin-top: 80px;
+    }
+
+    footer .content p {
+    margin: 0;
+}
 
 
 }
